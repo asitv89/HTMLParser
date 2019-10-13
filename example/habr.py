@@ -16,18 +16,9 @@ class ParserHabr(ParserHTML):
 		return title
 
 if __name__ == '__main__':
-	urls = [
-		'https://habr.com/ru/all/page1/',
-		'https://habr.com/ru/all/page2/',
-		'https://habr.com/ru/all/page3/',
-		'https://habr.com/ru/all/page4/',
-		'https://habr.com/ru/all/page5/',
-		'https://habr.com/ru/all/page6/',
-		'https://habr.com/ru/all/page7/',
-		'https://habr.com/ru/all/page8/',
-		'https://habr.com/ru/all/page9/',
-		'https://habr.com/ru/all/page10/'
-	]
+	urls = []
+	for i in range(1, 11):
+		urls.append(f'https://habr.com/ru/all/page{i}/')
 
 	parser = ParserHabr(urls)
 	result = parser.run()
