@@ -23,8 +23,8 @@ class ParserHabr(ParserHTML):
 После создаем экземпляр класса, в конструктор передаем массив URL-адресов.
 ```python3
 urls = []
-	for i in range(1, 11):
-		urls.append(f'https://habr.com/ru/all/page{i}/')
+for i in range(1, 11):
+	urls.append(f'https://habr.com/ru/all/page{i}/')
 
 parser = ParserHabr(urls)
 ```
